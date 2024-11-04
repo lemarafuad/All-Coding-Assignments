@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     {
         Player player1=new Player();
         Player player2=new Player();
+
+        bool fullRestore=true;
         
         player1.InitializePlayer("LM",21);
         player2.InitializePlayer("RT",60);
@@ -16,8 +18,8 @@ public class GameManager : MonoBehaviour
         player1.Heal(20);
         player2.Heal(5);
 
-        player1.Heal(true);
-        player2.Heal(true);
+        player1.Heal(fullRestore);
+        player2.Heal(fullRestore);
         
         Player.ShowPlayerCount();
     }

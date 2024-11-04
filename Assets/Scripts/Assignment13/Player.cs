@@ -5,8 +5,8 @@ using UnityEngine.UIElements;
 
 public class Player
 {
-    public string playerName="";
-    public int health=0;
+    private string playerName="";
+    private int health=0;
     static private int playerCount=0;
 
     public void InitializePlayer(string name, int initialHealth){

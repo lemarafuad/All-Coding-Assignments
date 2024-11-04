@@ -23,9 +23,9 @@ public class Player
         }
         else Debug.Log("The health for " + playerName + " is Full");
     }
-    public void Heal(bool full){
+    public void Heal(bool fullRestore){
         int healthBefore=health;
-        if (full==true){
+        if (fullRestore){
             if (health<100){
                 health=100;
                 Debug.Log("The health for " + playerName + " before healing is " + healthBefore + ", and after full healing the health becomes " + health + ".");

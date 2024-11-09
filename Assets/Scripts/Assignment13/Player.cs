@@ -17,9 +17,14 @@ public class Player
     }
     public void Heal(int amount){
         int healthBefore=health;
-        if(health<100){
+        if(health+amount>100){
+            health=100;
+            Debug.Log("The health for " + playerName + " before healing is " + healthBefore + ", and after healing by " + amount + ", the health becomes " + health + " because the heal mor than need.");
+        }
+        else if(health+amount<100){
             health+=amount;
             Debug.Log("The health for " + playerName + " before healing is " + healthBefore + ", and after healing by " + amount + ", the health becomes " + health + ".");
+        
         }
         else Debug.Log("The health for " + playerName + " is Full");
     }

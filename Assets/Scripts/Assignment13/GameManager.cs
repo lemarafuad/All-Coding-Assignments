@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         player2.InitializePlayer("RT",60);
         
         player1.Heal(20);
-        player2.Heal(5);
+        player2.Heal(60);
 
         player1.Heal(true);
         player2.Heal(true);

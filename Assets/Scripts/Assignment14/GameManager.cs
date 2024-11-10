@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace GameNamespace{
+
+
 public class GameManagerr : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -25,4 +28,5 @@ public class GameManagerr : MonoBehaviour
 
     }
 
+}
 }

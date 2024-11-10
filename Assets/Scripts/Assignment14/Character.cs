@@ -4,30 +4,22 @@ using UnityEngine;
 
 public class Character
 {
-    private string name = "Lemara";
-    private int health = 100;
+    private string name;
     public string Name{
         get{return name;}
         set{name=value;}
     }
+    private int health;
     public int Health{
         get{return health;}
-        set{health=value;}
+        set{
+            if(value>100){health=100;}
+            else if(value>0 && value<100){health=value;}
+            else{health=0;}
+        }
     }
     public Character(string name,int health){
-        this.name=name;
-        this.health=health;
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Name=name;
+        Health=health;
     }
 }

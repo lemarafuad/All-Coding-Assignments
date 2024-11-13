@@ -48,7 +48,7 @@ namespace Assignment16
             // officers[2] = officer2;
 
             Debug.Log("That day, Conan discovers the location of Gin and another member of the Black Organization He decides to inform Heiji,\n" +
-          " then they plan an attack A big fight breaks out at the location, and later, an eyewitness is called in to recount the events.");
+          " then they plan an attack, A big fight breaks out at the location, and later, an eyewitness is called in to recount the events.");
 
             for (int i = 0; i < CharacterHome.Length; i++)
             {

@@ -17,7 +17,8 @@ namespace Assignment16
         Character[] CharacterHome = new Character[4];
         Soldier[] soldiers = new Soldier[2];
         Officer[] officers = new Officer[2];
-        string[] attackType = { "shooting", "kicking", "punching", "slashing", "throwing" };
+        string[] attackType = { "shot", "kicked", "punched", "slashed", "thrown" };
+
 
         void Start()
         {
@@ -102,11 +103,11 @@ namespace Assignment16
         }
         public int CheckDamage(string attackType)
         {
-            if (attackType == "shooting") { return 30; }
-            else if (attackType == "kicking") { return 15; }
-            else if (attackType == "punching") { return 10; }
-            else if (attackType == "slashing") { return 25; }
-            else if (attackType == "throwing") { return 12; }
+            if (attackType == "shot") { return 30; }
+            else if (attackType == "kicked") { return 15; }
+            else if (attackType == "punched") { return 10; }
+            else if (attackType == "slashed") { return 25; }
+            else if (attackType == "thrown") { return 12; }
             else { return 0; }
         }
         public void RandomAttack()

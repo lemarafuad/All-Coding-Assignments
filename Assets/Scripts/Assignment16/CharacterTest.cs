@@ -74,7 +74,6 @@ namespace Assignment16
                 }
             }
 
-
         }
 
         // I created this function to avoid repeat writing print statements

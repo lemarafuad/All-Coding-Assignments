@@ -15,7 +15,7 @@ namespace Assignment24
         Vector3 direction;
         float currentSpeed = 0f;
         float acceleration = 1f;
-        bool reachedInFirst = false;
+        bool reachTheFirstTarget = false;
 
         void SimulateRace()
         {
@@ -58,7 +58,7 @@ namespace Assignment24
         {
             float deltaTime = Time.deltaTime;
 
-            if (!reachedInFirst)
+            if (!reachTheFirstTarget)
             {
                 direction = intermediatePosition - transform.localPosition;
                 currentSpeed += acceleration * deltaTime;
@@ -82,7 +82,7 @@ namespace Assignment24
                 }
                 else if (Vector3.Distance(transform.localPosition, intermediatePosition) < 0.1f)
                 {
-                    reachedInFirst = true;
+                    reachTheFirstTarget = true;
                     currentSpeed = 0;
                 }
 

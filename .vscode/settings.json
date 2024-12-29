@@ -51,5 +51,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "all_codes.sln"
+    "dotnet.defaultSolution": "all_codes.sln",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
 }
